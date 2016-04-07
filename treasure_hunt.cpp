@@ -1,7 +1,9 @@
 /*
 LOGIC : To store paths to all folders created separated by spaces in a 'paths' variable
 
-LIMITATION : Does not work for Folder names with spaces in them.
+LIMITATIONS :	1.	Does not work for Folder names with spaces in them.
+				2.	Does not support more than 2 options.
+				3.	input.txt must have at least 2 blank lines at the end or the program enters an infinite loop.
 */
 
 #include <iostream>
@@ -91,5 +93,5 @@ int main() {
 	}
 
 	//Finally!
-	createFile(answer_path + "win.txt","You Win!");
+	createFile(answer_path + "win.txt","Hurray! You Win!");
 }
